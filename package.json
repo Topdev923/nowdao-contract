@@ -1,0 +1,67 @@
+{
+  "name": "nowdao-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for NowDao",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.11.2",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "0.0.5"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "start": "npx hardhat run scripts/deploy.js",
+    "lint:sol": "solhint -f table contracts/**/*.sol",
+    "deploy:busd": "npx hardhat run scripts/testnet/1_deploy_busd.js",
+    "deploy:nmeta": "npx hardhat run scripts/1_deploy_nmeta.js",
+    "deploy:calculator": "npx hardhat run scripts/2_deploy_calculator.js",
+    "deploy:treasury": "npx hardhat run scripts/3_deploy_treasury.js",
+    "deploy:distributor": "npx hardhat run scripts/4_deploy_distributor.js",
+    "deploy:nusd": "npx hardhat run scripts/5_deploy_nusd.js",
+    "deploy:wnusd": "npx hardhat run scripts/6_deploy_wnusd.js",
+    "deploy:staking": "npx hardhat run scripts/7_deploy_staking.js",
+    "deploy:warmup": "npx hardhat run scripts/8_deploy_warmup.js",
+    "deploy:helper": "npx hardhat run scripts/9_deploy_helper.js",
+    "deploy:busdBond": "npx hardhat run scripts/10_deploy_busd_bond.js",
+    "deploy:bnbBond": "npx hardhat run scripts/11_deploy_bnb_bond.js",
+    "deploy:nmetaBusdBond": "npx hardhat run scripts/12_deploy_nmetabusd_bond.js",
+    "deploy:nmetaBnbBond": "npx hardhat run scripts/13_deploy_nmetabnb_bond.js",
+    "init:nmeta": "npx hardhat run scripts/14_init_nmeta.js",
+    "init:nusd": "npx hardhat run scripts/15_init_nusd.js",
+    "init:staking": "npx hardhat run scripts/16_init_staking.js",
+    "init:distributor": "npx hardhat run scripts/17_init_distributor.js",
+    "init:busdBond": "npx hardhat run scripts/18_init_busd_bond.js",
+    "init:bnbBond": "npx hardhat run scripts/19_init_bnb_bond.js",
+    "init:nmetaBusdBond": "npx hardhat run scripts/20_init_nmetabusd_bond.js",
+    "init:nmetaBnbBond": "npx hardhat run scripts/21_init_nmetabnb_bond.js",
+    "init:treasury": "npx hardhat run scripts/22_init_treasury.js",
+    "mint:nmeta": "npx hardhat run scripts/23_mint_nmeta.js",
+    "stake:nmeta": "npx hardhat run scripts/24_stake_nmeta.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NowDao/nowdao-contracts.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/NowDao/nowdao-contracts/issues"
+  },
+  "homepage": "https://github.com/NowDao/nowdao-contracts#readme"
+}
